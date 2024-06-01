@@ -9,7 +9,7 @@ function ChatArea() {
   const [data, setData] = useState("");
 
   return (
-    <div className="chatArea flex flex-col gap-5 justify-center space-y-10 rounded-lg p-10">
+    <div className="chatArea flex flex-col gap-5 justify-center space-y-10 rounded-lg md:p-10 p-5">
       <div className="message-container flex flex-col flex-1 gap-10 px-24">
         <div className=" flex justify-end">
           <div className=" bg-slate-300 p-3 rounded-xl shadow-xl">
@@ -20,7 +20,7 @@ function ChatArea() {
           <Answer />
         </div>
       </div>
-      <div className="text-input-area max-w-full flex bg-[#E4E8EE] justify-around items-center mx-40 rounded-xl shadow-xl">
+      <div className="text-input-area max-w-full flex bg-[#E4E8EE] justify-around items-center md:mx-40 mx-24 rounded-xl shadow-xl">
         <input
           type="text"
           onChange={(e) => {
@@ -28,7 +28,7 @@ function ChatArea() {
             setQue(e.target.value);
           }}
           placeholder="Type your questions"
-          className=" w-full outline-none pl-4 h-12 rounded-xl bg-[#E4E8EE]"
+          className=" md:w-full outline-none md:pl-4 h-12 rounded-xl bg-[#E4E8EE]"
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               // e.preventDefault();

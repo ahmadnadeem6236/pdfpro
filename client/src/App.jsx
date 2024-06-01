@@ -7,7 +7,7 @@ function App() {
       <div className=" flex flex-[0.1]">
         <Navbar />
       </div>
-      <div className=" flex flex-[0.9] rounded-md items-end px-16">
+      <div className=" flex flex-[0.9] rounded-md items-end md:px-16">
         <ChatArea />
       </div>
     </div>
